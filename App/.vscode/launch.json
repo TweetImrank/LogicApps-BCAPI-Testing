@@ -2,18 +2,37 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Attach: Microsoft cloud sandbox",
+            "type": "al",
+            "request": "attach",
+          "environmentType": "Sandbox",
+            "environmentName": "Dev",
+            "tenant": "e7922f1e-d0c8-49f5-affa-d5a8316806cb",
+            "breakOnError": "All",
+            "breakOnRecordWrite": "None",
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10,
+            "breakOnNext": "WebServiceClient",
+            "useMcpServerForDebugging": true
+        },
+        
+        {
             "name": "Microsoft cloud sandbox",
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
             "environmentName": "Dev",
-            "tenant": "e7922f1e-d0c8-49f5-affa-d5a8316806cb/",
+            "tenant": "e7922f1e-d0c8-49f5-affa-d5a8316806cb",
             "startupObjectId": 22,
             "startupObjectType": "Page",
-            "breakOnError": "All",
+            "breakOnError": true,
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
-            "enableSqlInformationDebugger": true
+            "enableSqlInformationDebugger": true,
+            
+           
         }
     ]
 }
