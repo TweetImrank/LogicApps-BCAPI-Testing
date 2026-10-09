@@ -1,0 +1,15 @@
+{
+	"servers": {
+		"businesscentral": {
+  "url": "https://mcp.businesscentral.dynamics.com",
+  "type": "http",
+  "headers": {
+    "TenantId": "e7922f1e-d0c8-49f5-affa-d5a8316806cb",
+    "EnvironmentName": "Dev",
+    "Company": "CRONUS UK Ltd.",
+    "ConfigurationName": "Data Query"
+  }
+}
+}
+}
+
